@@ -47,3 +47,27 @@ a:hover {
     
     border-radius: 8px; /* Dodatek estetyczny */
 }
+
+/* Zadanie 28: Użycie jednostek względnych dla tekstu */
+body {
+    font-size: 1rem;
+}
+
+/* Zadanie 26: Dodanie breakpointu dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    
+    /* Zadanie 27: Zmień Flexbox z rzędu na kolumnę */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Zadanie 29: Ukryj nawigację na mobile (zgodnie z poleceniem) */
+    nav {
+        display: none;
+    }
+
+    .card {
+        width: 90%; /* Karta zajmie prawie całą szerokość ekranu telefonu */
+    }
+}
