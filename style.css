@@ -1,0 +1,36 @@
+/* Zadanie 14: Podstawowy styl strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Zadanie 15: Ostyluj nagłówki */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Zadanie 16: Styl linków z efektem hover */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Zadanie 17: Użycie klasy i ID */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#main-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
