@@ -23,14 +23,27 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Zadanie 17: Użycie klasy i ID */
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-}
-
 #main-title {
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+/* Zadanie 19: Ustawienie globalne box-sizing */
+/* Dzięki temu padding i border nie zwiększają szerokości elementu */
+* {
+    box-sizing: border-box;
+}
+
+/* Zadanie 18, 20 i 21: Box Model dla karty produktu/artykułu */
+.card {
+    background: white;
+    /* Zadanie 18: Padding, margin i border */
+    padding: 20px;
+    margin: 20px auto; /* Zadanie 21: auto wyśrodkuje kartę w poziomie */
+    border: 2px solid #ccc;
+    
+    /* Zadanie 20: Stała szerokość karty */
+    width: 300px;
+    
+    border-radius: 8px; /* Dodatek estetyczny */
 }
