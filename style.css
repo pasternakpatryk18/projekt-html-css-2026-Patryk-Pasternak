@@ -1,72 +1,45 @@
-/* Zadanie 14: Podstawowy styl strony */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Zadanie 15: Ostyluj nagłówki */
-h1 {
-    color: #2c3e50;
-    text-align: center;
-}
-
-/* Zadanie 16: Styl linków z efektem hover */
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
-    text-decoration: underline;
-}
-
-#main-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Zadanie 19: Ustawienie globalne box-sizing */
-/* Dzięki temu padding i border nie zwiększają szerokości elementu */
-* {
-    box-sizing: border-box;
-}
-
-/* Zadanie 18, 20 i 21: Box Model dla karty produktu/artykułu */
-.card {
-    background: white;
-    /* Zadanie 18: Padding, margin i border */
-    padding: 20px;
-    margin: 20px auto; /* Zadanie 21: auto wyśrodkuje kartę w poziomie */
-    border: 2px solid #ccc;
-    
-    /* Zadanie 20: Stała szerokość karty */
-    width: 300px;
-    
-    border-radius: 8px; /* Dodatek estetyczny */
-}
-/* Zadanie 22 i 23: Główny kontener strony */
+/* Kontener na karty produktów */
 .container {
-    display: flex;             /* Uruchamia Flexbox */
-    justify-content: space-between;   /* Odstęp */
-    align-items: center;   /* Wyrównuje do srodka */
-    gap: 20px;                 /* Zadanie 25: Odstępy zamiast marginesów */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     padding: 20px;
 }
 
-/* Zadanie 24: Menu poziome */
-nav ul {
-    display: flex;             /* Elementy listy obok siebie */
-    justify-content: center;   /* Wyśrodkowanie menu */
-    gap: 20px;                 /* Odstępy między linkami */
-    list-style: none;          /* Usuwa kropki z listy */
-    padding: 0;
+/* Stylowanie karty */
+.card {
+    text-align: center;
+    transition: transform 0.3s ease; /* Bonus: płynne najechanie */
 }
 
-/* Poprawka dla linków w menu, żeby wyglądały lepiej */
-nav a {
-    font-weight: bold;
-    text-transform: uppercase;
+.card:hover {
+    transform: translateY(-10px); /* Karta lekko się unosi */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Zadanie 30: Przyciski */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+
+/* Poprawka stopki */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
 }
