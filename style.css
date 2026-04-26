@@ -47,3 +47,26 @@ a:hover {
     
     border-radius: 8px; /* Dodatek estetyczny */
 }
+/* Zadanie 22 i 23: Główny kontener strony */
+.container {
+    display: flex;             /* Uruchamia Flexbox */
+    justify-content: space-between;   /* Odstęp */
+    align-items: center;   /* Wyrównuje do srodka */
+    gap: 20px;                 /* Zadanie 25: Odstępy zamiast marginesów */
+    padding: 20px;
+}
+
+/* Zadanie 24: Menu poziome */
+nav ul {
+    display: flex;             /* Elementy listy obok siebie */
+    justify-content: center;   /* Wyśrodkowanie menu */
+    gap: 20px;                 /* Odstępy między linkami */
+    list-style: none;          /* Usuwa kropki z listy */
+    padding: 0;
+}
+
+/* Poprawka dla linków w menu, żeby wyglądały lepiej */
+nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
